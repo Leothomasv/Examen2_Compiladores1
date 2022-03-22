@@ -1,8 +1,9 @@
-﻿namespace QueryBuilder.Core.Interfaces
+﻿using QueryBuilder.Core.Statements;
+namespace QueryBuilder.Core.Interfaces
 {
 
     public interface IParser
     {
-        void Parse();
+        Statement Parse();
     }
 }

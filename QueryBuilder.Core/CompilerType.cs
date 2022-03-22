@@ -15,6 +15,12 @@ namespace QueryBuilder.Core
             TokenType = tokenType;
         }
 
+        public static CompilerType Int => new CompilerType("int", TokenType.IntKeyword);
+        public static CompilerType Float => new CompilerType("float", TokenType.FloatKeyword);
+        public static CompilerType Bool => new CompilerType("bool", TokenType.BoolKeyword);
+        public static CompilerType String => new CompilerType("string", TokenType.StringKeyword);
+
+
         public bool Equals(CompilerType other)
         {
             if (ReferenceEquals(null, other)) return false;
